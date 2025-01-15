@@ -11,28 +11,52 @@ body {
     font-weight: bold;
 }
 
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.card-body {
+    width: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+}
+
+
 .cardtext {
     float: left;
     font-weight: bolder;
 }
 
-#next {
-    background-color: rgb(253, 198, 46);
-    border: #dad9d3;
 
+#prev,
+#next,
+#submit {
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 16px;
+    background-color: rgb(253, 198, 46);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-#prev {
-    background-color: rgb(253, 198, 46);
-    border: #dad9d3;
+#prev:hover,
+#next:hover,
+#submit:hover {
+    background-color: rgb(185, 136, 0);
 }
 
 #submit {
-    background-color: rgb(37, 138, 37);
-    font: rgb(255, 255, 255);
-    border: #dad9d3;
-    margin-right: 155px;
-    margin-top: 25px;
+    background-color: rgb(54, 201, 54);
+    margin-top: 20px;
 }
 
 #submit:hover {
