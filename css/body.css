@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney');
+@import url('https://fonts.googleapis.com/css2?family=Kanit');
+@import url('https://fonts.googleapis.com/css2?family=Righteous');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #151515;  
+    /* min-height: 2000px;   */
+}
+.solarsys{
+    position: relative;
+    margin-top: 0;
+    left: 0;
+    top: 0;
+    display: block;
+    justify-content: center;
+    transition:top 2s;
+} 
+.solarsys2{
+    position: relative;
+    margin-top: 0;
+    left: 0;
+    top: 0;
+    display: block;
+    justify-content: center;
+    transition:left 1s;
+}
+.wall{
+    position: absolute;
+    height:1000px;
+    width:100% ;
+    object-fit: cover;
+    display: block;
+}
+.solar ,.solar2{
+    position: relative;
+    letter-spacing: 1px;
+    padding-top: 50px;
+    margin-top: 40px;
+    transform: translate(0,30vh);
+} 
+.solarsys.hide{
+    top: 100%;
+}
+.solar2{
+    position: relative;
+    right: 0;
+    top: 0;
+    transition: right 2s;
+}
+.solar2.hide2{
+    right: 100%;
+}  
+
+.sub-solar {
+    position: relative;
+    text-align: center;
+    width:100%;
+    padding: 30px; 
+    font-family:Kanit ;
+    color:white;
+    font-size: 1.4em;
+    line-height: 50px;
+    /* margin:2vh; */
+    transform: translate(0,30vh);
+}
+
+h1 {
+    font-family: Righteous;
+    font-size: 5em;
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+    letter-spacing:3vw; 
+    margin-top: 40px; 
+}
+.text1 {
+    background-color: rgba(255,255,255, 0.1);
+    font-family: Kanit;
+    font-size: 20px;
+    color: #B4A5A5;
+    margin: 20px;
+    margin-right: 45px;
+    /* border-radius: 25px; */
+    padding: 20px;
+    line-height: 45px;
+    z-index: 1;
+    margin-left: 45px;
+}
+.text1 span{
+    padding: 50px;
+}
+.img{
+    margin: 50px;
+    border-radius: 10%;
+    float: left; width: 35%;
+    position:relative;
+    transition:1s;
+}
+
+.img2{
+    margin: 50px;
+    border-radius: 10%;
+    float: right; width: 35%;
+    position:relative;
+    transition:1s;
+    margin-top: 300px;
+}
+.img:hover{
+    transform: scale(1.3);
+    /* transition:1s; */
+}
+.img2:hover{
+    transform: scale(1.3);
+    /* transition:1s; */
+}
+.submitb{
+    position: relative;
+    font-size: 1em;
+    background-color: rgb(53, 231, 97);
+    padding: 10px 20px 10px 20px;
+    font-family: Righteous;
+    border-radius: 35px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-style: none;
+    transform: translate(35vw,0);
+}

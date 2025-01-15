@@ -1,0 +1,129 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#start_page {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cardtext {
+    float: left;
+    font-weight: bolder;
+}
+
+#next {
+    background-color: rgb(253, 198, 46);
+    border: #dad9d3;
+
+}
+
+#prev {
+    background-color: rgb(253, 198, 46);
+    border: #dad9d3;
+}
+
+#submit {
+    background-color: rgb(37, 138, 37);
+    font: rgb(255, 255, 255);
+    border: #dad9d3;
+    margin-right: 155px;
+    margin-top: 25px;
+}
+
+#submit:hover {
+    background-color: rgb(24, 92, 24);
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax {
+    margin-top: 15vh;
+    margin: 200px;
+}
+
+#options1 {
+    display: block;
+}
+
+#btn {
+    background-color: rgb(253, 198, 46);
+    border: rgb(253, 198, 46);
+}
+
+#btn:hover {
+    background-color: rgb(185, 136, 0);
+}
+
+#options1,
+#options2,
+#options3,
+#options4 {
+    background-color: rgba(0, 0, 0, 0.815);
+    color: rgb(255, 255, 255);
+    border: black;
+}
+
+#options1:hover {
+    background-color: rgb(238, 192, 66);
+}
+
+#options2:hover {
+    background-color: rgb(238, 192, 66);
+}
+
+#options3:hover {
+    background-color: rgb(238, 192, 66);
+}
+
+#options4:hover {
+    background-color: rgb(238, 192, 66);
+}
+
+#options1:focus,
+#options2:focus,
+#options3:focus,
+#options4:focus {
+    background-color: rgb(238, 192, 66);
+    border: rgb(238, 192, 66);
+}
+
+
+.quiz_footer {
+    position: relative;
+    background-color: #151515;
+    font-family: Kanit;
+    font-size: 15px;
+    padding: 20px;
+    text-align: right;
+    z-index: 2;
+    width: 100%;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .quiz_footer {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .quiz_footer {
+        font-size: 10px;
+        padding: 10px;
+    }
+}

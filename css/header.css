@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney');
+@import url('https://fonts.googleapis.com/css2?family=Kanit');
+@import url('https://fonts.googleapis.com/css2?family=Righteous');
+
+/* header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 0 100px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 0.5s;
+    background-color: #151515;
+    z-index: 1;
+}
+
+header.change{
+    transition: 0.5s;
+    height: 10%;
+}
+/* header .logo .banner*/
+header .banner{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    z-index: 3;
+}
+header .logo{
+    position: absolute;
+    top:50%;
+    left:40%;
+    transform: translate(-50%,-50%);
+    color: #FFCC00;
+    font-size: 15vw;
+    font-family: Righteous;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.5s;
+    z-index: 3;
+}
+header.change .logo{
+    position: absolute;
+    transition: 0.5s;
+    left: 15%;
+    font-size: 2em;
+    color: #FFCC00;
+}
+header.change .banner{
+    opacity: 0;
+}
+/* header .nav*/
+nav{
+    position: relative;
+    display: flex;
+    z-index: 3;
+    transition :0.75s ;
+} 
+nav ul{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    transition: delay 0.5s;
+    transform: translateX(100px);
+    opacity: 0;
+
+}
+/* จัดตำแหน่งของตัว nav  */
+nav ul li{
+    position: relative ;
+    list-style: none ;
+    display: inline-block;
+}
+nav ul li a {
+    font-family: Righteous ;
+    color: #FFCC00;
+    display: block;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+    padding: 0px 15px ;
+    margin-left: 10px;
+    height: 100%;
+}
+/* เอฟเฟคแสดงแถบเมนูเมื่อเลื่อนหน้าแรกลงมาจะแสดงแถบเมนู */
+header.change nav ul
+{   
+    transform: translateX(0px);
+    opacity: 1;
+    transition: 1s; 
+    visibility: visible;
+}
+/* เอฟเฟคเส้น nav bar ให้มันปิดไว้ก่อน */
+nav ul li .menu:after{
+    content: "";
+    position: absolute;
+    background-color: #FFCC00;
+    height: 3px;
+    width: 0;
+    left: 0;
+    top: 10px;
+    transition: 0.3s;
+   
+}
+/* เอฟเฟคตอนชี้แล้วจะมีเส้นขึ้นมาตรง nav bar */
+nav ul li .menu:hover:after{ 
+    width: 100%;
+} 
+
+nav ul li:hover{
+    cursor: pointer;
+}
+/* เมื่อชี้แล้วจะเปลี่ยนสีตัวหนังสือ */
+nav ul li a:hover{
+    color:whitesmoke;
+    transform: scale(1.06);
+    transition:0.3s;
+}
+
+/* พื้นหลังของตัว dropdown */
+nav ul ul{
+    background-color: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(8px);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: absolute;
+    top: 60px;
+    display: none;
+    transition: top 0.3s;
+}
+/* ขนาดพื้นหลังของตัว dropdown */
+nav ul ul .planetmenu{
+    float: none;
+    width:140px;
+    display: list-item;     /*แสดง ul อะแหละไม่มีอะไร เราซ่อนไว้จากด้านบนแล้วมาด้านล่างก็เลยสั่งมันแสดง*/
+    position: relative;
+    
+}
+nav ul ul .equipment{
+    float: none;
+    width:170px;
+    display: list-item;
+    position: relative;
+}
+/* ทำให้ตัว dropdown ของเราแสดงเป็น block */
+nav ul li:hover > ul{
+    display: block;
+    
+}
+/* footer */
+footer{
+    position: relative;
+    background-color: #151515;
+    font-family: Kanit;
+    font-size:15px;
+    padding: 20px;
+    clear:both;
+    text-align: right;
+    z-index: 2;
+}
+footer .CR{
+    text-decoration: none;
+    color: #FFD369;
+}
+/* ชี้แล้วจะเปลี่ยนสี */
+footer .CR:hover{
+    color : white;
+}
